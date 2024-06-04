@@ -1,0 +1,5 @@
+<resources>
+    <string name="client_id">CC9Z49RowU70jRUDtvde</string>
+    <string name="client_secret">OyPJOEWS5u</string>
+    <string name="client_name">oauth-flutter</string>
+</resources>

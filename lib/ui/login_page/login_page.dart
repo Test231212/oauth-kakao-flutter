@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_naver_login/flutter_naver_login.dart';
 import 'package:kakao_flutter_sdk/kakao_flutter_sdk.dart';
 import 'package:oauthapp/_core/http.dart';
 
@@ -9,13 +10,21 @@ class LoginPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("카카오 로그인"),
+        title: Text("로그인"),
       ),
-      body: ElevatedButton(
-        child: Text("카카오로그인"),
-        onPressed: () async {
-          kakaoLogin();
-        },
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            ElevatedButton(
+              child: Text("카카오 로그인"),
+              onPressed: () async {
+                kakaoLogin();
+              },
+            ),
+            SizedBox(height: 20),
+          ],
+        ),
       ),
     );
   }
